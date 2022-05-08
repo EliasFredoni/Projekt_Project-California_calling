@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: black;
+  color: white;
+  max-width: 1440px;
+}
+
+.wrapper,
+article,
+.grid_box2,
+footer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+p {
+  font-size: 1.3rem;
+  padding-bottom: 2%;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-bottom: 1%;
+}
+
+h2 {
+  font-size: 6rem;
+  padding-bottom: 2%;
+  font-family: "Larish";
+}
+
+h3 {
+  font-size: 2rem;
+  padding-bottom: 1%;
+  font-family: "Larish";
+}
+
+button {
+  border-color: white;
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  padding: 20px 40px;
+}
+
+@font-face {
+  font-family: "Larish";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Larish"), local("Larish-Regular"), url(../fonts/LarishNeueSemibold.woff) format("woff"), url(../fonts/Larish\ Neue\ Semibold.woff2) format("woff2");
+}
+header {
+  height: 100vh;
+}
+header div:nth-child(1) {
+  position: relative;
+}
+header div:nth-child(1) .line {
+  position: absolute;
+  right: 43.6%;
+  color: black;
+  font-size: 9em;
+  border-left: 2px solid rgba(128, 128, 128, 0.545);
+}
+header div:nth-child(2) {
+  padding-top: 17%;
+  text-align: center;
+}
+header h2 {
+  line-height: 0.5em;
+}
+header .textStroke {
+  color: black;
+  -webkit-text-stroke: 1px white;
+}
+header ul {
+  padding-top: 10%;
+  list-style: none;
+  display: flex;
+  gap: 70rem;
+  padding-left: 5%;
+}
+
+section h2 {
+  padding-right: 10%;
+}
+section .fakts {
+  background-image: url("../img/map.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 40% 100%;
+  height: 100vh;
+  padding-top: 10%;
+}
+
+article:nth-of-type(1) {
+  position: relative;
+  height: 170vh;
+  background-color: white;
+  color: black;
+}
+article:nth-of-type(1) div {
+  position: absolute;
+  top: 15%;
+}
+article:nth-of-type(1) div h2:nth-of-type(1) {
+  text-align: center;
+  line-height: 4rem;
+  padding-top: 10%;
+}
+article:nth-of-type(1) div h2:nth-of-type(2) {
+  text-align: center;
+}
+article:nth-of-type(1) div p {
+  padding-right: 30%;
+  padding-left: 30%;
+  line-height: 2rem;
+}
+article:nth-of-type(1) img:nth-of-type(1) {
+  position: absolute;
+  right: 7%;
+  bottom: 86%;
+}
+article:nth-of-type(1) img:nth-of-type(2) {
+  position: absolute;
+  top: 11%;
+}
+article:nth-of-type(1) img:nth-of-type(3) {
+  position: absolute;
+  top: 47%;
+  right: 2%;
+}
+article:nth-of-type(1) img:nth-of-type(4) {
+  position: absolute;
+  top: 60%;
+  right: 60%;
+}
+article:nth-of-type(1) img:nth-of-type(5) {
+  position: absolute;
+  top: 75%;
+  right: 10%;
+}
+
+article:nth-of-type(2) {
+  position: relative;
+  height: 70vh;
+  background-color: white;
+  color: black;
+}
+article:nth-of-type(2) div {
+  position: absolute;
+  top: 10%;
+}
+article:nth-of-type(2) div p {
+  padding-right: 30%;
+  padding-left: 30%;
+  line-height: 2rem;
+}
+article:nth-of-type(2) img:nth-of-type(1) {
+  position: relative;
+  bottom: 15%;
+  right: 2%;
+}
+article:nth-of-type(2) img:nth-of-type(2) {
+  position: relative;
+  top: 65%;
+  left: 30%;
+}
+
+.grid_box1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 160vh;
+  gap: 10px;
+  background-image: url("../img/goldenbear.png");
+  background-repeat: no-repeat;
+  background-position: left 0% bottom -30%;
+  background-size: 60%;
+}
+.grid_box1 .box1a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-right: 10%;
+  padding-top: 30%;
+}
+.grid_box1 .box1b {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 40%;
+}
+.grid_box1 .box1b p {
+  padding-top: 5%;
+}
+.grid_box1 .box1d {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.grid_box2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  height: 200vh;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  background-image: url("../img/rosebear.png");
+  background-repeat: no-repeat;
+  background-position: right 5% bottom 10%;
+  background-size: 60%;
+}
+
+.box2a {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  padding-right: 50%;
+  padding-top: 30%;
+}
+
+.box2b {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-top: 40%;
+}
+.box2b p {
+  padding-top: 5%;
+}
+
+.box2c {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  padding-left: 15%;
+  padding-top: 50%;
+}
+
+.box2d {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.circle {
+  position: absolute;
+  top: 700%;
+  left: 79%;
+  animation-duration: 20s;
+  animation-name: circle;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  position: relative;
+  padding-top: 10%;
+}
+footer h3 {
+  padding-right: 60%;
+  padding-bottom: 2%;
+}
+footer p:nth-of-type(2) {
+  padding-top: 2%;
+}
+footer div:nth-of-type(1) {
+  padding-top: 15%;
+}
+footer div:nth-of-type(2) {
+  position: absolute;
+  left: 75%;
+  bottom: 10%;
+}
+footer .banner {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  width: 100%;
+  height: 13%;
+  background-color: white;
+  color: black;
+  transform: rotate(40deg);
+  z-index: -1;
+  animation-name: banner;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+footer .banner span {
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes banner {
+  0%, 100% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(500px);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+    max-width: 1440px;
+}
+
+.wrapper,
+article,
+.grid_box2,
+footer {
+    padding-left: 5%;
+    padding-right: 5%;
+}
